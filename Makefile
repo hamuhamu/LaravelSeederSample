@@ -1,2 +1,7 @@
-db:
-	php artisan db:seed
+PHP := $(shell which php)
+
+seed:
+	$(PHP) artisan db:seed
+
+migrate:
+	$(PHP) artisan migrate
